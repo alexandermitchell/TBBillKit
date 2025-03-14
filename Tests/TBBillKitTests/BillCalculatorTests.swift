@@ -49,7 +49,7 @@ final class BillCalculatorTests: XCTestCase {
 
 
 // MARK: - Mock TaxCalculator
-private final class MockTaxCalculator: TaxCalculating {
+final class MockTaxCalculator: TaxCalculating {
     var subtotal: Decimal = 0.0
     var taxTotal: Decimal = 0.0
     var postTaxTotal: Decimal = 0.0
@@ -60,7 +60,7 @@ private final class MockTaxCalculator: TaxCalculating {
 }
 
 // MARK: - Mock DiscountCalculator
-private final class MockDiscountCalculator: DiscountCalculating {
+final class MockDiscountCalculator: DiscountCalculating {
     var postTaxAndDiscountTotal: Decimal = 0.0
     var discountTotal: Decimal = 0.0
 
